@@ -16,9 +16,10 @@ namespace Game
             Quaternion rotation,
             GameObject parent)
         {
-            var gameObject_MyVariAble = Instantiate(pipePairPrefab, position, rotation);
-            if (parent) gameObject_MyVariAble.transform.parent = parent.transform;
-            return gameObject_MyVariAble;
+            var pipePair = Instantiate(pipePairPrefab, position, rotation);
+            if (parent) pipePair.transform.parent = parent.transform;
+            return pipePair;
+            
         }
     }
 }
